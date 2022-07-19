@@ -1,0 +1,48 @@
+/* ... google font.... */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ... footer..... */
+.footer{
+    background-color: black;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    height: 250px;
+
+}
+.footer-goal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4em ;
+    height: 55%;
+}
+hr{
+    width: 80%;
+}
+.footer-nav{
+    display: flex;
+    justify-content: center;
+    
+}
+.nav-item{
+    padding: 0px 20px;
+    color: lightgrey;
+    font-size: .8em;
+}
+a:hover{
+    color: blue;
+    cursor:pointer;
+}
