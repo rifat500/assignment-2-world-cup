@@ -85,7 +85,6 @@ main{
     display: grid;
     grid-template-rows: repeat(3,1fr);
     row-gap: 15px;
-    /* flex-direction: column; */
     background-color: black;
     height: fit-content;
     justify-content: space-around;
@@ -169,7 +168,7 @@ main{
     background-color: red;
     border-radius: 7px;
     border: none;
-    
+
 
 }
 .view-all{
@@ -196,7 +195,7 @@ main{
     color: white;
     opacity: .9;
     font-family: 'Poppins', sans-serif;
-    height: 300px;
+    height:400px;
 
 }
 .footer-goal{
@@ -204,7 +203,7 @@ main{
     justify-content: center;
     align-items: center;
     font-size: 1.4em ;
-    height: 55%;
+    height: 45%;
 }
 hr{
     width: 80%;
@@ -227,3 +226,37 @@ h5>a:hover{
     color: lightblue;
     cursor:pointer;
 }
+
+.social-media{
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 10px;
+    width: 50%;
+    margin: 0px auto;
+    padding: 20px;
+    justify-content: center ;
+
+}
+.social-para{  
+    width: 100%;
+    margin: 0px 0px;
+
+}
+.social-icons{
+    display: flex;
+    flex-direction: column;
+}
+
+.social-icons a{
+    text-decoration: none;
+    color: gray;
+}
+.social-icons i{
+    color: aqua;
+    padding: 0px 10px;
+}
+
+/* ...........
+mobile view
+ */
