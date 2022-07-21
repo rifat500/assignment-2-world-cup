@@ -1,6 +1,50 @@
+/* ................
+    .........
+    ........
+    .......
+    .
+    .
+    .
+    Important !!!!!
+    .
+    .
+    .
+    .
+    .
+    .
+
+    A lot of styles are being kept commented in the
+    stylesheet 
+
+    its because during debugging period removing and 
+    adding code again and again is a  hassle and 
+    time consuming
+    
+    thats why all of them are kept commented
+    and not directly removed
+
+    .
+    .
+    .
+    .
+    thankyou for your attention !
+    .
+    .
+    .
+    .
+    .........
+    .............
+    ...............
+    ..................
+*/
+
 /* ... google font.... */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+body{
+    margin: 0px;
+}
 /* ... header... */
 header{
     width: 80%;
@@ -11,23 +55,41 @@ header{
 /* ... section: top-poster */
 .top-poster{
     background-color: black;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    /* justify-content: space-evenly; */
+    /* column-gap: 10px; */
     border-radius: 20px;
-    margin-top: 10px;
-    padding: 20px 0px 0px 70px;
-    border: 0px;
+    
+    width: 100%;
+    /* margin-top: 10px; */
+    /* padding: 20px 0px 0px 70px; */
+    /* border: 1px white; */
 
 }
 .poster-info{
     color: white;
-    width: 50%;
-    padding: 20px;
+    width: 80%;
+    margin: 0px auto;
+    /* padding: 20px; */
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.poster-player{
+    width: 90%;
+    margin: 0px;
+    /* border: 1px solid white; */
+    padding: 0px ;
+    justify-content: center;
+    align-items: center;
 }
 .poster-info h1{
-    font-size: 45px;
-    font-weight: bolder;    
+    font-size: 65px;
+    /* font-weight: bolder;     */
     font-family:sans-serif;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     padding: 0px;
     border: 0px;
 }
@@ -40,29 +102,29 @@ header{
     font-family: 'Poppins', sans-serif;
 }
 .poster-info button{
-    width: 120px;
-    height: 40px;
+    width: 140px;
+    height: 50px;
     margin: 20px 0px;
-    background-color: rgb(20, 183, 220);
+    background-color: rgb(220, 20, 70);
     border-radius: 9px;
    
+}
+.poster-info button:hover{
+    background-color: rgb(2, 228, 228);
+    transition-duration: .5s;
+    width: 160px ;
+    
 }
 .poster-info a{
     text-decoration: none;
     color: white ;
-    font-weight:900;
+    font-size: 15px;
+    font-weight:700;
 }
 
-.poster-player{
-    width: 50%;
-    border: 0px ;
-    padding: 0px 15px 0px 0px ;
-    border: 0px;
-    margin: 0px;
-    align-items: center;
-}
 .player{
     width: 100%;
+    height:100%;
   
 }
 
@@ -84,7 +146,7 @@ main{
 .match-pages{
     display: grid;
     grid-template-rows: repeat(3,1fr);
-    row-gap: 15px;
+    row-gap: 10px;
     background-color: black;
     height: fit-content;
     justify-content: space-around;
@@ -94,13 +156,19 @@ main{
 }
 .match-pages button {
     height: 45px;
-    border-radius: 5px;
+    padding: 0px 30px;
+    border-radius: 10px;
+}
+.match-pages button:hover{
+    background-color: cyan;
+    color: white;
 }
 .match-pages button a{
     text-decoration: none;
     color: black;
     font-weight: bold;
     font-family: sans-serif;
+
 }
 .active{
     background-color: red;
@@ -180,22 +248,18 @@ main{
 
 
 
-
-
-
-
-
-
-
-
-
 /* ... footer..... */
+
+
 .footer{
     background-color: black;
     color: white;
     opacity: .9;
     font-family: 'Poppins', sans-serif;
-    height:400px;
+    height:fit-content;
+    margin: 0px;
+    border: 0px;
+
 
 }
 .footer-goal{
@@ -226,26 +290,37 @@ h5>a:hover{
     color: lightblue;
     cursor:pointer;
 }
-
+/* ..... social media links ....... */
 .social-media{
     color: white;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+    display: flex;
+    flex-direction: column;
+    /* grid-template-columns: repeat(2,1fr); */
     column-gap: 10px;
-    width: 50%;
+    width: 100%;
     margin: 0px auto;
-    padding: 20px;
+    padding: 0px 0px 40px 0px;
     justify-content: center ;
 
 }
-.social-para{  
+.stay-connected{
+    /* border: 1px solid white; */
+    text-align: center;
+}
+/* .social-para{  
     width: 100%;
     margin: 0px 0px;
 
-}
+} */
 .social-icons{
     display: flex;
     flex-direction: column;
+    width: 100%;
+    /* margin: 0px auto; */
+    /* align-items: center; */
+    /* justify-content:center; */
+    text-align: center;
+    /* border: 1px solid white; */
 }
 
 .social-icons a{
@@ -257,18 +332,146 @@ h5>a:hover{
     padding: 0px 10px;
 }
 
-/* .................................
+/* .....................................................................................
 mobile view
-.................................... */
-@media screen and(max-width:576px) {
+.............................................................................................. */
+@media screen and (max-width:688px) {
+    
+    /* ..... header ........ */
+ 
     .top-poster{
+        display: flex;
         flex-direction: column;
+        width: 85%;
+        margin: 0px auto;
     }
-    .view-btn{
-        display: hidden;
+    .poster-info{
+        width: 70%;
+        align-items: center;
+    }
+    .poster-info h1{
+        font-size: 35px;
+        font-weight: lighter;
+    }
+    .poster-info p{
+        justify-content: center;
+    }
+    .poster-player{
+        width: 70% ;
+        margin: 0px auto;
+    }
+    .poster-info button{
+        width: 180px;
     }
 
+/* ......... main ......... */
+    header{
+        margin: 10px auto 0px;
+    }
+    .match{
+        display: flex;
+        flex-direction: column;
+        /* background-color: white; */
+    }
+    .match-pages{
+        background-color: white;
+        padding: 40px 0px;
+    }
+
+
+    /* .... blog links ........ */
+
+    .blog-links{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .tablet-view-button{
+        /* display: hidden; */
+        visibility: hidden;
+    }
+
+
+
+    /* ....... footer ........ */
+
+    .footer-goal{
+        height: 25%;
+    }
+    .footer-nav{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .social-media{
+        grid-template-columns: repeat(1,1fr);
+        /* align-items: center; */
+    }
+    .social-icons{
+        /* text-align: center; */
+        /* justify-content: center; */
+        margin: 0px auto;
+    }
+
+   
 }
 
 
+/* .................................
+tablet view
+.................................... */
 
+@media screen and (min-width:689px) and (max-width:1057px){
+
+    .poster-info h1{
+        font-size: 45px;
+        font-weight: lighter;    
+        font-family:sans-serif;
+        /* margin-top: 30px; */
+        padding: 0px;
+        border: 0px;
+    }
+
+ 
+    .poster-player{
+        width: 90%;
+        /* margin: 0px; */
+        /* border: 1px solid white; */
+        padding: 0px ;
+        /* justify-content: center; */
+        /* align-items: center; */
+        /* text-align: center; */
+    }
+
+/* .... blog links ........ */
+
+    .blog-links{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .tablet-view-button{
+        /* display: hidden; */
+        visibility: visible;
+    }
+    /* 
+........ match-pages......
+*/
+
+.match{
+    display: flex;
+    flex-direction: column;
+
+    /* grid-template-columns: 200px auto;
+    column-gap: 10px; */
+
+    }
+.match-pages{
+    background-color: white;
+    display: flex;
+    }
+}
+
+@media screen and (min-width:1058px) and (max-width:1500px) {
+    
+    .tablet-view-button{
+        /* display: hidden; */
+        visibility: hidden ;
+    }
+}
