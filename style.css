@@ -257,6 +257,18 @@ h5>a:hover{
     padding: 0px 10px;
 }
 
-/* ...........
+/* .................................
 mobile view
- */
+.................................... */
+@media screen and(max-width:576px) {
+    .top-poster{
+        flex-direction: column;
+    }
+    .view-btn{
+        display: hidden;
+    }
+
+}
+
+
+
